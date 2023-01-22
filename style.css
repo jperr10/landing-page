@@ -5,21 +5,22 @@ body {
     margin: 0;
     overflow: scroll;
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-section {
-    height: 350px;
     background: #1F2937;
-    padding: 12px 200px 100px 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .header,
 .hero {
     display: flex;
     justify-content: space-between;
+    padding: 14px 14px 75px 14px;
 }
 
 .logo {
@@ -38,7 +39,11 @@ ul {
 a{
     color: #E5E7EB;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+}
+
+.hero {
+    width: 1000px
 }
 
 .hero-text {
@@ -66,8 +71,8 @@ button {
 }
 
 .image {
-    height: 150px;
-    width: 350px;
+    height: 180px;
+    width: 380px;
     background: grey;
     color: #E5E7EB;
     display: flex;
@@ -92,7 +97,7 @@ button {
 .card {
     width: 150px;
     text-align: center;
-    margin-bottom: 72px; /* Should this be margin or padding? */
+    padding-bottom: 72px;
 }
 
 .info {
@@ -112,7 +117,7 @@ button {
 
 .quote-container {
     width: 800px;
-    padding: 75px 0;
+    padding: 75px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +128,7 @@ button {
     color: #1F2937;
     font-size: 36px;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 .quote-author {
@@ -165,7 +171,7 @@ button {
 .footer {
     background: #1F2937;
     color: #E5E7EB;
-    margin-bottom: 0;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
